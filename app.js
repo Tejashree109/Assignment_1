@@ -67,3 +67,13 @@ const getUpdate = async (_id) => {//updation
     }
 }
 getUpdate("62bbe37f8252cdd8e5ee8dc7");
+
+const deletedata = async(_id)=>{
+    try{
+        const result = await  PlayList.deleteOne({_id})
+        console.log(result)
+    }catch(err){
+        console.log(err);
+    }
+}
+deletedata("62bbe7cb915a8640b0a89524");//delecting 

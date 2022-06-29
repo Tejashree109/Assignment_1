@@ -1,0 +1,15 @@
+{
+  "name": "mangoose",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^6.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tejashree",
+  "license": "ISC"
+}

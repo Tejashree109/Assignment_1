@@ -45,3 +45,25 @@ console.log(result);
 }
  }
  createDocument();
+const getData = async  () => {
+    try{
+    const result = await PlayList.find({name: "Avengers: Endgame"}).select({name:1, summary:1});//Reading
+    console.log(result);
+    }catch(err){
+        console.log(err);
+    }
+
+}
+getData();
+
+const getUpdate = async (_id) => {//updation
+    try{
+        const result = await PlayList.updateOne({_id},{
+            $set : {name : "Avengers"}
+        });
+        console.log(result);
+    }catch(err){
+        console.log(err);
+    }
+}
+getUpdate("62bbe37f8252cdd8e5ee8dc7");
